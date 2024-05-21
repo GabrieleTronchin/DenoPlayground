@@ -1,15 +1,15 @@
-# Sample Deno Service in TypeScript
+# Enhanced Deno Service in TypeScript
 
-This project presents a straightforward service API built with Deno.
+This repository showcases a simple yet robust service API developed using Deno.
 
-Project Status: Draft
+**Project Status:** In Progress
 
-For those unfamiliar with Deno, it's a secure runtime for JavaScript and TypeScript. You can find more information about Deno at:
+Deno is a secure runtime for JavaScript and TypeScript, designed to address some of the shortcomings of Node.js. For more information about Deno, visit:
 
-- [Deno Official Website](https://deno.com/)
+- [Deno Official Website](https://deno.land/)
 - [Deno Examples Repository](https://examples.deno.land/)
 
-This service executes requests to a sample API. Here's the API specification: [Open Library API Search](https://openlibrary.org/dev/docs/api/search)
+The service facilitates interactions with a sample API. Refer to the following for the API specification: [Open Library API Search](https://openlibrary.org/dev/docs/api/search).
 
 ## Getting Started
 
@@ -25,31 +25,42 @@ Once Deno is installed, navigate your terminal to the `src` folder of this proje
 deno run --allow-net server.ts
 ```
 
-This command starts the server, granting network access as required.s
+This will launch the server, permitting necessary network access.
 
-deno.json settings:
+## Additional Information
 
-https://docs.deno.com/runtime/manual/getting_started/configuration_file
+### Configuration
 
-routing:
-https://docs.deno.com/examples/http-server-routing
+Create a `deno.json` file in the project's root directory to customize settings.
 
-redis:
+For official documentation, see:
 
-https://docs.deno.com/examples/redis
+[Deno Configuration File](https://deno.land/manual/getting_started/configuration_file)
 
-json:
-https://docs.deno.com/examples/parsing-serializing-json
+### Routing
 
-enviroment:
-https://docs.deno.com/runtime/manual/basics/env_variables
+Deno's default routing is straightforward. For an example, visit:
 
-https://docs.deno.com/examples/environment-variables
+[Deno HTTP Server Routing](https://deno.land/examples/http-server-routing)
 
+This project introduces a basic structure to segregate business logic:
+- `routing.ts` manages URI matching and invokes corresponding functions, handling incorrect URIs and exceptions.
+- Each endpoint triggers a function located in the `api` directory.
 
-cronjob
-https://deno.com/blog/cron#using-deno-crons
+### To-Do List
 
-If you're using Visual Studio Code, consider installing the Deno extension for better integration:
+- JSON handling:
+  [Parsing and Serializing JSON](https://deno.land/examples/parsing-serializing-json)
 
-- [Deno Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
+- Environment variables:
+  [Environment Variables Basics](https://deno.land/manual/runtime/basics/env_variables)
+  [Using Environment Variables](https://deno.land/examples/environment-variables)
+
+- Cron jobs:
+  [Scheduling Cron Jobs with Deno](https://deno.land/blog/cron#using-deno-crons)
+
+### Visual Studio Code Integration
+
+For those utilizing Visual Studio Code, enhance your experience by installing the Deno extension:
+
+- [Deno Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
