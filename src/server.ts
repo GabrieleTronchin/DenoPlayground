@@ -1,4 +1,3 @@
- import { logJob } from "./jobs/addJobs.ts";
 import { handleRouting } from "./routing.ts";
 
 async function handler(req: Request): Promise<Response> {
