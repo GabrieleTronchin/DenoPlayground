@@ -23,7 +23,30 @@ Once Deno is installed, navigate your terminal to the `src` folder of this proje
 deno run --allow-net server.ts
 ```
 
-This command starts the server, granting network access as required.
+This command starts the server, granting network access as required.s
+
+deno.json settings:
+
+https://docs.deno.com/runtime/manual/getting_started/configuration_file
+
+routing:
+https://docs.deno.com/examples/http-server-routing
+
+redis:
+
+https://docs.deno.com/examples/redis
+
+json:
+https://docs.deno.com/examples/parsing-serializing-json
+
+enviroment:
+https://docs.deno.com/runtime/manual/basics/env_variables
+
+https://docs.deno.com/examples/environment-variables
+
+
+cronjob
+https://deno.com/blog/cron#using-deno-crons
 
 If you're using Visual Studio Code, consider installing the Deno extension for better integration:
 
