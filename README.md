@@ -2,6 +2,8 @@
 
 This project presents a straightforward service API built with Deno.
 
+Project Status: Draft
+
 For those unfamiliar with Deno, it's a secure runtime for JavaScript and TypeScript. You can find more information about Deno at:
 
 - [Deno Official Website](https://deno.com/)
