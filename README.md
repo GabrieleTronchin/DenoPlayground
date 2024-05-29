@@ -2,8 +2,6 @@
 
 This repository showcases a simple yet robust service API developed using Deno.
 
-**Project Status:** In Progress
-
 Deno is a secure runtime for JavaScript and TypeScript, designed to address some of the shortcomings of Node.js. For more information about Deno, visit:
 
 - [Deno Official Website](https://deno.land/)
