@@ -1,4 +1,4 @@
-# Enhanced Deno Service in TypeScript
+# Playground with Deno
 
 This repository showcases a simple yet robust service API developed using Deno.
 
